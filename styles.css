@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#header{
+
+    background-image: url(images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+
+.container{
+    padding: 30px 10%;
+}
+
+.container .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    height: 70px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    font-family: 'Josefin Sans';
+}
+
+.menu ul li a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    left: 0;
+    top: 110%;
+    transition: 0.4s;
+}
+
+.menu ul li a:hover::after{
+    width: 50%;
+}
+
+.menu ul li a.active::after{
+    width: 100%;
+}
+
+nav #menuBtn{
+    cursor: pointer;
+    user-select: none;
+    display: none;
+    }
+    
+ #menuBtn .bar{
+     width: 26px;
+     height: 3px;
+     background-color: #fff;
+     margin: 5px auto;
+     border-radius: 5px;
+     transition: 0.4s cubic-bezier(1, 0.2, 0.2 1);
+}
+
+.header{
+    height: 277px;
+    width: 600px;
+    border: 2px solid #fff;
+    margin-top: 10%;
+    font-size: 32px;
+    font-family: 'Josefin Sans';
+}
+
+.header h1{
+    color: #fff;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.section{
+    padding: 10% 10%;
+    display: flex;
+}
+
+.sec1 .img2{
+    display: none;
+}
+
+.sec2{
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    right: 100px;
+    margin-top: 200px;
+    position: absolute;
+    padding: 90px 100px;
+}
+
+.sec2 h2{
+    font-weight: 400;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans';
+    line-height: 40px;
+}
+
+.sec2 p{
+    opacity: .5;
+    font-family: 'Josefin Sans';
+    line-height: 25px;
+}
+
+.main-sec{
+    padding: 0 10%;
+}
+
+.body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.body h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Josefin Sans';
+    letter-spacing: 2px;
+}
+
+.body .btn{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    height: 40px;
+    letter-spacing: 4px;
+
+}
+
+.body .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.body{
+    margin-bottom: 60px;
+}
+
+.pics {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   width: 100%;
+   gap: 18px;
+   position: relative;
+   height: 1100px;
+   
+}
+
+.pent{
+    display: none;
+}
+
+.pics p{
+    margin-top: -100px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: sans-serif 'Josefin Sans';
+    font-weight: 300;
+}
+
+.pics a{
+    color: white;
+    text-decoration: none;
+}
+
+.pics a img:hover{
+    opacity: .2;
+}
+
+.pics a:hover{
+    color: black;
+    opacity: 1;
+}
+
+footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.cont{
+    padding: 3% 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footnav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footnav li{
+    list-style: none;
+    padding-right: 20px;
+    font-family: 'Josefin Sans';
+    padding-top: 20px;
+}
+
+.footnav li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.footnav li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.footnav li a:hover::after{
+    width: 100%;
+}
+
+.icons{
+    display: inline;
+}
+
+.icons a{
+    position: relative;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.icons a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    border-radius: 5px;
+    background: white;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    transition: 0.5s;
+}
+
+.icons a:hover::after{
+    width: 40%;
+}
+
+.text{
+    color: white;
+    padding-top: 30px;
+    opacity: .5;
+    font-family: 'Josefin Sans';
+}
+
+@media screen and (max-width: 1280px) {
+    #header{
+
+        background-image: url(images/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        background-position: center;
+    }
+    
+    .container{
+        padding: 30px 10%;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav li{
+        list-style: none;
+        padding: 20px;
+        font-family: 'Josefin Sans';
+    }
+    
+    .nav li a{
+        color: white;
+        text-decoration: none;
+        position: relative;
+    }
+    
+    .nav li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        border-radius: 5px;
+        background: #fff;
+        position: absolute;
+        left: 10px;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    
+    .nav li a:hover::after{
+        width: 50%;
+    }
+    
+    .header{
+        height: 277px;
+        width: 600px;
+        border: 2px solid #fff;
+        margin-top: 10%;
+        font-size: 32px;
+        font-family: 'Josefin Sans';
+    }
+    
+    .header h1{
+        color: #fff;
+        font-weight: 300;
+        padding-left: 30px;
+        padding-top: 25px;
+    }
+    
+    .section{
+        padding: 10% 10%;
+        display: flex;
+    }
+    
+    .sec2{
+        width: 600px;
+        height: 300px;
+        background-color: #fff;
+        right: 100px;
+        margin-top: 200px;
+        position: absolute;
+        padding: 90px 100px;
+    }
+    
+    .sec2 h2{
+        font-weight: 400;
+        font-size: 45px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-family: 'Josefin Sans';
+        line-height: 40px;
+    }
+    
+    .sec2 p{
+        opacity: .5;
+        font-family: 'Josefin Sans';
+        line-height: 25px;
+    }
+    
+    .main-sec{
+        padding: 0 10%;
+    }
+    
+    .body{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .body h3{
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-family: 'Josefin Sans';
+        letter-spacing: 2px;
+    }
+    
+    .body .btn{
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        padding: 0 30px;
+        text-transform: uppercase;
+        font-weight: 300;
+        height: 40px;
+        letter-spacing: 4px;
+    
+    }
+    
+    .body .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    
+    .body{
+        margin-bottom: 60px;
+    }
+    
+    .pics {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr 1fr 1fr;
+       width: 100%;
+       gap: 18px;
+       position: relative;
+       height: 1100px;
+       
+    }
+    
+    .pics p{
+        margin-top: -100px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: sans-serif 'Josefin Sans';
+        font-weight: 300;
+    }
+    
+    .pics a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .pics a img:hover{
+        opacity: .2;
+    }
+    
+    .pics a:hover{
+        color: black;
+        opacity: 1;
+    }
+    
+    footer{
+        background-color: black;
+        height: auto;
+        width: 100%;
+    }
+    
+    .cont{
+        padding: 3% 10%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footnav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footnav li{
+        list-style: none;
+        padding-right: 20px;
+        font-family: 'Josefin Sans';
+        padding-top: 20px;
+    }
+    
+    .footnav li a{
+        color: white;
+        text-decoration: none;
+        position: relative;
+    }
+    
+    .footnav li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        border-radius: 5px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    
+    .footnav li a:hover::after{
+        width: 100%;
+    }
+    
+    .icons{
+        display: inline;
+    }
+    
+    .icons a{
+        position: relative;
+        text-decoration: none;
+        padding: 20px;
+    }
+    
+    .icons a::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        border-radius: 5px;
+        background: white;
+        position: absolute;
+        left: 20px;
+        bottom: 10px;
+        transition: 0.5s;
+    }
+    
+    .icons a:hover::after{
+        width: 40%;
+    }
+    
+    .text{
+        color: white;
+        padding-top: 30px;
+        opacity: .5;
+        font-family: 'Josefin Sans';
+    }
+}
+
+@media screen  and (max-width: 834px){
+    
+    .section{
+        padding: 10% 5%;
+        display: flex;
+    }
+    
+    .sec2{
+        width: 600px;
+        height: 300px;
+        background-color: #fff;
+        right: 100px;
+        margin-top: 240px;
+        position: absolute;
+        padding: 90px 100px;
+    }
+    
+    .sec2 h2{
+        font-weight: 400;
+        font-size: 45px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-family: 'Josefin Sans';
+        line-height: 40px;
+    }
+    
+    .sec2 p{
+        opacity: .5;
+        font-family: 'Josefin Sans';
+        line-height: 25px;
+    }
+    
+    .main-sec{
+        padding: 5% 5%;
+        height: 2000px;
+    }
+    
+    .body{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .body h3{
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-family: 'Josefin Sans';
+        letter-spacing: 2px;
+    }
+    
+    .body .btn{
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        padding: 0 30px;
+        text-transform: uppercase;
+        font-weight: 300;
+        height: 40px;
+        letter-spacing: 4px;
+    
+    }
+    
+    .body .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    
+    .body{
+        margin-bottom: 60px;
+    }
+    
+    .pics {
+        padding: 0 5%;
+       display: grid;
+       grid-template-columns: 1fr 1fr ;
+       grid-template-rows: 1fr 1fr 1fr 1fr;
+       width: 100%;
+       gap: 30px;
+       position: relative;   
+    }
+
+    .pics .card{
+        height: 400px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+
+    #header{
+
+    background-image: url(images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+}
+
+nav #menuBtn{
+    display: block;
+  }
+
+  .menu ul{
+    position: fixed;
+    width: 70%;
+    height: 400px;
+    top: -700px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid black;
+    transition: top 0.4s cubic-bezier(1, 0.2, 0.2, 1);
+  }
+
+  .menu ul li{
+    padding: 20px;
+    letter-spacing: 2px;
+  }
+
+  nav ul li:nth-child(1){
+    margin-top: 30px;
+  }
+
+  #menuBtn.active .bar:nth-child(2) {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+
+  #menuBtn.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #menuBtn.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu ul.active{
+    top: 90px;
+  }
+
+
+.header{
+    height: 277px;
+    width: 100%;
+    border: 2px solid #fff;
+    margin-top: 10%;
+    font-size: 24px;
+    font-family: 'Josefin Sans';
+    margin-top: 150px;
+}
+
+.header h1{
+    color: #fff;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.section{
+    padding: 10% 10%;
+    display: block;
+}
+
+.sec1{
+    width: 100%;
+}
+
+.sec1 .img2{
+    display: block;
+    width: 100%;
+}
+
+.sec1 .img1{
+    display: none;
+}
+.sec2{
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    right: 0;
+    margin-top: 40px;
+    position: relative;
+    padding: 0 0;
+    text-align: center;
+}
+
+.sec2 h2{
+    font-weight: 400;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans';
+    line-height: 34px;
+}
+
+.sec2 p{
+    opacity: .5;
+    font-family: 'Josefin Sans';
+    line-height: 25px;
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+.main-sec{
+    padding: 0 10%;
+    margin-top: -30px;
+    height: 1420px;
+}
+
+.body{
+    display: block;
+    justify-content: space-between;
+}
+
+.body h3{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Josefin Sans';
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.body .btn{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    height: 40px;
+    letter-spacing: 4px;
+    position: absolute;
+    margin-top: 1230px;
+    margin-left: 80px;
+}
+
+.body .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.body{
+    margin-bottom: 60px;
+}
+
+.pics {
+   display: none;
+}
+
+.pent{
+    display: block;
+    width: 100%;
+}
+
+.card{
+    width: 100%;
+}
+
+.pent p{
+    margin-top: -70px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: sans-serif 'Josefin Sans';
+    font-weight: 300;
+}
+
+.pent a{
+    color: white;
+    text-decoration: none;
+}
+
+.pent a img:hover{
+    opacity: .2;
+}
+
+.pent a:hover{
+    color: black;
+    opacity: 1;
+}
+
+footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.cont{
+    padding: 3% 10%;
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.meg{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.footnav{
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.icons{
+    display: inline;
+}
+
+.icons a{
+    position: relative;
+    text-decoration: none;
+    padding: 0;
+    margin-left: 35px;
+}
+
+.text{
+    color: white;
+    padding-top: 30px;
+    opacity: .5;
+    font-family: 'Josefin Sans';
+    text-align: center;
+}
+}
+
+@media screen and (max-width:500px) {
+   
+}
+
+
